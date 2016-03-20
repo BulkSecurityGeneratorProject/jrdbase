@@ -1,0 +1,10 @@
+jrdbase-postgresql:
+  container_name: jrdbase-postgresql
+  image: postgres:9.4.5
+  # volumes:
+  #   - ~/volumes/jhipster/jrdbase/postgresql/:/var/lib/postgresql/
+  environment:
+    - POSTGRES_USER=jrdbase
+    - POSTGRES_PASSWORD=
+  ports:
+    - "5432:5432"

@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "jrdbase",
+    "packageName": "com.jrd.jrdbase",
+    "packageFolder": "com/jrd/jrdbase",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "no",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": true,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "06cf7eab547ac86b8f9b1b8b9cd93ecbf1b4c9c4",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}
