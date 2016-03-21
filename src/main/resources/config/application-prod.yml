@@ -53,7 +53,7 @@ server:
 # JHipster specific properties
 # ===================================================================
 
-jhipster:
+jrdbase:
     http:
         cache: # Used by the CachingHttpHeadersFilter
             timeToLiveInDays: 31

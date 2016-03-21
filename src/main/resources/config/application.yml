@@ -33,7 +33,7 @@ security:
 # JHipster specific properties
 # ===================================================================
 
-jhipster:
+jrdbase:
     async:
         corePoolSize: 2
         maxPoolSize: 50

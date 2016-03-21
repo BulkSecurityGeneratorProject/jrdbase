@@ -49,7 +49,7 @@ server:
 # JHipster specific properties
 # ===================================================================
 
-jhipster:
+jrdbase:
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: jrdbase@localhost
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration

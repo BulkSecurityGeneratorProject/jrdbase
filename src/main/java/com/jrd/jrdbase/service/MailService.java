@@ -1,6 +1,6 @@
 package com.jrd.jrdbase.service;
 
-import com.jrd.jrdbase.config.JHipsterProperties;
+import com.jrd.jrdbase.config.JrdbaseProperties;
 import com.jrd.jrdbase.domain.User;
 
 import org.apache.commons.lang.CharEncoding;
@@ -33,7 +33,7 @@ public class MailService {
     private final Logger log = LoggerFactory.getLogger(MailService.class);
 
     @Inject
-    private JHipsterProperties jHipsterProperties;
+    private JrdbaseProperties jrdbaseProperties;
 
     @Inject
     private JavaMailSenderImpl javaMailSender;
@@ -59,7 +59,7 @@ public class MailService {
         try {
             MimeMessageHelper message = new MimeMessageHelper(mimeMessage, isMultipart, CharEncoding.UTF_8);
             message.setTo(to);
-            message.setFrom(jHipsterProperties.getMail().getFrom());
+            message.setFrom(jrdbaseProperties.getMail().getFrom());
             message.setSubject(subject);
             message.setText(content, isHtml);
             javaMailSender.send(mimeMessage);
@@ -104,5 +104,5 @@ public class MailService {
         String subject = messageSource.getMessage("email.reset.title", null, locale);
         sendEmail(user.getEmail(), subject, content, false, true);
     }
-    
+
 }

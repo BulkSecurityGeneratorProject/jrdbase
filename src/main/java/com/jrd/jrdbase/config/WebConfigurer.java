@@ -35,7 +35,7 @@ public class WebConfigurer implements ServletContextInitializer, EmbeddedServlet
     private Environment env;
 
     @Inject
-    private JHipsterProperties props;
+    private JrdbaseProperties props;
 
     @Autowired(required = false)
     private MetricRegistry metricRegistry;

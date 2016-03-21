@@ -1,7 +1,7 @@
 package com.jrd.jrdbase;
 
 import com.jrd.jrdbase.config.Constants;
-import com.jrd.jrdbase.config.JHipsterProperties;
+import com.jrd.jrdbase.config.JrdbaseProperties;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +25,7 @@ import java.util.Collection;
 
 @ComponentScan
 @EnableAutoConfiguration(exclude = { MetricFilterAutoConfiguration.class, MetricRepositoryAutoConfiguration.class })
-@EnableConfigurationProperties({ JHipsterProperties.class, LiquibaseProperties.class })
+@EnableConfigurationProperties({ JrdbaseProperties.class, LiquibaseProperties.class })
 public class Application {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);

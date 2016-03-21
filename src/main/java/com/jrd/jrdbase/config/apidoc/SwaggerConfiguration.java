@@ -1,7 +1,7 @@
 package com.jrd.jrdbase.config.apidoc;
 
 import com.jrd.jrdbase.config.Constants;
-import com.jrd.jrdbase.config.JHipsterProperties;
+import com.jrd.jrdbase.config.JrdbaseProperties;
 
 import java.util.Date;
 import org.slf4j.Logger;
@@ -38,18 +38,18 @@ public class SwaggerConfiguration {
      */
     @Bean
     @Profile("!" + Constants.SPRING_PROFILE_FAST)
-    public Docket swaggerSpringfoxDocket(JHipsterProperties jHipsterProperties) {
+    public Docket swaggerSpringfoxDocket(JrdbaseProperties jrdbaseProperties) {
         log.debug("Starting Swagger");
         StopWatch watch = new StopWatch();
         watch.start();
         ApiInfo apiInfo = new ApiInfo(
-            jHipsterProperties.getSwagger().getTitle(),
-            jHipsterProperties.getSwagger().getDescription(),
-            jHipsterProperties.getSwagger().getVersion(),
-            jHipsterProperties.getSwagger().getTermsOfServiceUrl(),
-            jHipsterProperties.getSwagger().getContact(),
-            jHipsterProperties.getSwagger().getLicense(),
-            jHipsterProperties.getSwagger().getLicenseUrl());
+            jrdbaseProperties.getSwagger().getTitle(),
+            jrdbaseProperties.getSwagger().getDescription(),
+            jrdbaseProperties.getSwagger().getVersion(),
+            jrdbaseProperties.getSwagger().getTermsOfServiceUrl(),
+            jrdbaseProperties.getSwagger().getContact(),
+            jrdbaseProperties.getSwagger().getLicense(),
+            jrdbaseProperties.getSwagger().getLicenseUrl());
 
         Docket docket = new Docket(DocumentationType.SWAGGER_2)
             .apiInfo(apiInfo)
