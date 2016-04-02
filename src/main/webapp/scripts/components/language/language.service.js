@@ -27,7 +27,6 @@ angular.module('jrdbaseApp')
  They are written in English to avoid character encoding issues (not a perfect solution)
  */
     .constant('LANGUAGES', [
-        'en', 'fr'
-        // jhipster-needle-006 - JHipster will add new languages here
+        'en', 'fr', 'pl'
     ]
 );

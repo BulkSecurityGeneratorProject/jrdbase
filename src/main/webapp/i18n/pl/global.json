@@ -1,0 +1,118 @@
+{
+    "global": {
+        "title": "jrdbase",
+        "browsehappy": "Używasz <strong>przestarzałej</strong> przeglądarki. Proszę <a href=\"http://browsehappy.com/?locale=en\">uaktualnij swoją przeglądarkę</a> w celu zachowania pełnej kompatybilności z tą stroną.",
+        "menu": {
+            "home": "Home",
+            "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
+            "entities": {
+                "main": "Encje",
+                "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+            },
+            "account": {
+                "main": "Konto",
+                "settings": "Ustawienia",
+                "password": "Hasło",
+                "sessions": "Sesje",
+                "login": "Zaloguj",
+                "logout": "Wyloguj",
+                "register": "Zarejestruj się"
+            },
+            "admin": {
+                "main": "Administracja",
+                "user-management": "Zarządzanie użytkownikami",
+                "tracker": "Śledzenie użytkowników",
+                "metrics": "Metryki",
+                "health": "Zdrowie aplikacji",
+                "configuration": "Konfiguracja",
+                "logs": "Logi",
+                "audits": "Audyty",
+                "apidocs": "API",
+                "database": "Baza danych",
+                "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
+            },
+            "language": "Język"
+        },
+        "form": {
+            "username": "Nazwa użytkownika",
+            "username.placeholder": "Twoja nazwa użytkownika",
+            "newpassword": "Nowe hasło",
+            "newpassword.placeholder": "Nowe hasło",
+            "confirmpassword": "Potwierdzenie nowego hasło",
+            "confirmpassword.placeholder": "Potwierdź nowe hasło",
+            "email": "E-mail",
+            "email.placeholder": "Twój e-mail"
+        },
+        "messages": {
+            "info": {
+                "authenticated": "Jeśli chcesz <a class=\"alert-link\" href=\"#/login\">zalogoeać się</a>, możesz wybrać wbudowane konta accounts:<br/>- Administrator (login=\"admin\" and password=\"admin\") <br/>- User (login=\"user\" and password=\"user\").",
+                "register": "Nie masz jeszcze konta? <a class=\"alert-link\" href=\"#/register\">Zarejestruj nowe konto.</a>"
+            },
+            "error": {
+                "dontmatch": "Hasło i jego potwierdzenie nie pasują do siebie!"
+            },
+            "validate": {
+                "newpassword": {
+                    "required": "Twoje hasło jest wymagane.",
+                    "minlength": "Twoje hasło musi mieć co najmniej 5 znaków.",
+                    "maxlength": "Twoje hasło nie może być dłuższe niż 50 znaków.",
+                    "strength": "Siła hasła:"
+                },
+                "confirmpassword": {
+                    "required": "Potwierdzenie hasła jest wymagane.",
+                    "minlength": "Twoje potwiedzenie hasła musi mieć co najmniej 5 znaków.",
+                    "maxlength": "Twoje potwierdzenie hasła nie może być dłuższe niż 50 znaków."
+                },
+                "email": {
+                    "required": "Twój e-mail jest wymagany.",
+                    "invalid": "Twój e-mail jest niepoprawny.",
+                    "minlength": "Twój e-mail musi mieć co najmniej 5 znaków.",
+                    "maxlength": "Twoj e-mail nie może być dłuższy niż 50 znaków."
+                }
+            }
+        },
+        "field": {
+            "id": "ID"
+        }
+    },
+    "entity": {
+        "action": {
+            "addblob": "Dodaj blob",
+            "addimage": "Dodaj obraz",
+            "back": "Wstecz",
+            "cancel": "Anuluj",
+            "delete": "Usuń",
+            "edit": "Edytuj",
+            "save": "Zapisz",
+            "view": "Podgląd"
+        },
+        "detail": {
+            "field": "Pole",
+            "value": "Wartość"
+        },
+        "delete": {
+            "title": "Potwierdź operację usunięcia."
+        },
+        "validation": {
+            "required": "To pole jest wymagane.",
+            "minlength": "To pole musi mieć co najmniej {{ min }} znaków.",
+            "maxlength": "To pole nie może być dłuzsze niż {{ max }} znaków.",
+            "min": "To pole musi mieć co najmniej {{ min }}.",
+            "max": "This field cannot be more than {{ max }}.",
+            "minbytes": "To pole musi mieć co najmniej{{ min }} bajtów.",
+            "maxbytes": "To pole nie może być dłuzsze niż {{ max }} bajtów.",
+            "pattern": "To pole powinno być zgodne ze wzorcem {{ pattern }}.",
+            "number": "To pole powinno być liczbą.",
+            "datetimelocal": "To pole powinno mieć wartość czasową."
+        }
+    },
+    "error": {
+        "server.not.reachable": "Serwer nieosiągalny",
+        "NotNull": "Pole {{ fieldName }} nie może być puste!",
+        "Size": "Pole {{ fieldName }} nie spełnie wymogów odnoścnie min/maks rozmiaru!",
+        "userexists": "Login jest już w użyciu!",
+        "emailexists": "E-mail jest już w użyciu!",
+        "idexists": "Nowe{{ entityName }} nie może mieć już ID"
+    },
+    "footer": "To jest \"stopka\""
+}

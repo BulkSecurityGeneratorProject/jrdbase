@@ -1,0 +1,9 @@
+{
+    "main": {
+        "title": "Witaj, ty dziwaku javowy ;)",
+        "subtitle": "To jest Twoja strona główna!",
+        "logged": {
+            "message": "Jesteś zalogowany jako użytkownik \"{{username}}\"."
+        }
+    }
+}

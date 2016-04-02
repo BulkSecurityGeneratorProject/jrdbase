@@ -1,0 +1,19 @@
+{
+    "login": {
+        "title": "Zaloguj",
+        "form": {
+            "password": "Hasło",
+            "password.placeholder": "Twoje hasło",
+            "rememberme": "Pamiętaj mnie",
+            "button": "Zaloguj"
+        },
+        "messages": {
+            "error": {
+                "authentication": "<strong>Logowanie nieudane!</strong> Sprawdź proszę nazwę użytkownika i hasło i spróbuj ponownie!"
+            }
+        },
+        "password" : {
+            "forgot": "Czy zapomniałeś swojego hasła?"
+        }
+    }
+}
