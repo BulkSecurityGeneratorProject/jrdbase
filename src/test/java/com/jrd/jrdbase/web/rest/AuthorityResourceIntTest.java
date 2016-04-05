@@ -20,6 +20,7 @@ import javax.inject.Inject;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
@@ -50,6 +51,7 @@ public class AuthorityResourceIntTest {
         mockMvc.perform(get("/api/authorities")
             .accept(MediaType.APPLICATION_JSON))
             .andExpect(status().isOk())
-            .andExpect(content().contentType("application/json"));
+            .andExpect(content().contentType("application/json"))
+            .andExpect(jsonPath("$[0].name").value("ROLE_ADMIN"));
     }
 }
