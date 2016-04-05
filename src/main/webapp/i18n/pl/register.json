@@ -1,13 +1,13 @@
 {
     "register": {
-        "title": "Registration",
+        "title": "Rejestracja",
         "form": {
-            "button": "Register"
+            "button": "Zarejestruj"
         },
         "messages": {
             "validate": {
                 "login": {
-                    "required": "Your username is required.",
+                    "required": "Nazwa użytkownika jest wymagana.",
                     "minlength": "Your username is required to be at least 1 character.",
                     "maxlength": "Your username cannot be longer than 50 characters.",
                     "pattern": "Your username can only contain lower-case letters and digits."
